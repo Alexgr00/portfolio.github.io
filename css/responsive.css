@@ -1,0 +1,268 @@
+/*Sticky*/
+@keyframes menu_animation {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .sticky a {
+        color: black;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: unset;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header ul li {
+        margin: 0;
+    }
+
+    header ul li a {
+        padding: 0;
+        margin: 6px 10px;
+        font-size: 1.2em;
+    }
+
+    .hamburger-on {
+        display: none;
+    }
+
+    .featured {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .card {
+        padding: 20px;
+        background: none;
+        width: 45%;
+        backdrop-filter: none;
+    }
+}
+
+/*About Me*/
+@media screen and (max-width: 1200px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        padding: 0;
+    }
+
+    .inner-section {
+        padding: 60px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 6px;
+        width: 160px;
+    }
+}
+
+/*Skills*/
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 span {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 span {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 span {
+        padding: 0;
+    }
+}
+
+/*Services*/
+@media (max-width: 992px) {
+    .wrapper {
+        padding: 26px;
+    }
+
+    .wrapper h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .content-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-service {
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+/*Timeline*/
+@media screen and (min-width: 768px) {
+    .timeline .swiper-slide::after {
+        right: -30%;
+        bottom: -8%;
+        width: 240px;
+        height: 50%;
+        box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
+    }
+
+    .timeline .swiper-slide-content {
+        right: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 310px;
+        font-size: 11px;
+        text-align: right;
+    }
+
+    .timeline .swiper-slide .timeline-year {
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+
+    .timeline .swiper-slide .timeline-title {
+        font-size: 46px;
+        margin: 0;
+    }
+
+    .timeline .swiper-pagination {
+        display: flex;
+    }
+
+    .timeline .swiper-button-prev {
+        top: 15%;
+        left: auto;
+        right: 15%;
+        transform: rotate(90deg) translate(0, 10px);
+    }
+
+    .timeline .swiper-button-prev:hover {
+        transform: rotate(90deg) translate(-3px, 10px);
+    }
+
+    .timeline .swiper-button-next {
+        top: auto;
+        bottom: 15%;
+        right: 15%;
+        transform: rotate(90deg) translate(0, 10px);
+    }
+
+    .timeline .swiper-button-next:hover {
+        transform: rotate(90deg) translate(3px, 10px);
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .timeline .swiper-slide::after {
+        right: -20%;
+        bottom: -12%;
+        width: 240px;
+        height: 50%;
+        box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7);
+    }
+
+    .timeline .swiper-slide-content {
+        right: 25%;
+    }
+
+}
+
+
+/*Testimonials*/
+@media screen and (max-width: 960px) {
+    .colt {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*Contact*/
+@media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+
+    .contact-form h2{
+        font-size: 30px;
+    }
+
+    .contact-form .text-box{
+        width: 100%;
+    }
+
+}
+
+/*Footer*/
+@media (max-width: 768px) {
+    .footer-col {
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
